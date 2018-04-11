@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Potato Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+   
+</head>
+
+<body>
+
+<div class="jumbotron">
+  <h1>Potato Collector!</h1>
+</div>
+
+<div class="jumbotron">
+    <p>
+        You will be given a random number at the start of the game 
+        in the "Random Number" box. 
+    </p>
+    <p>
+        There are four different images on ways to eat potatoes below. By clicking 
+        on one of the potato images, you will add a specifc amount of points to 
+        the "Your Total Score is:" section. For each round the amounts assigned to
+        the images will not change however once you start a new round, a new number 
+        wilL be assigned to each image.
+    </p>
+    <p>
+        You win the game by matching your total score to the random number.
+        You lose the game if your total score goes above the random number.
+    </p>
+    <p>
+        Good luck! HAPPY EATING!
+    </p>
+</div>
+
+<div class="jumbotron">
+    <div class="container score">
+        <div class="col-sm-4">
+            <p id= "random-number">Random Number: </p>
+        </div>
+        <div class="col-sm-4">
+            <div class="row-wins">
+                <p id= "wins">Wins: </p>
+            </div>
+            <hr>
+            <div class="row-losses">
+                <p id= "losses">Losses: </p>
+            </div>   
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron">
+    <p>Choose a potato image!</p>
+    <div class="container potato">
+        <div class="col-sm-1">
+            <img id = "french" src="assets/images/french_fries.jpg" alt="French Fries" width= "80" height="80">
+        </div>
+        <div class="col-sm-1">
+            <img id = "hash" src="assets/images/hash_browns.jpg" alt="Hash Browns" width="80" height="80">    
+        </div>
+        <div class="col-sm-1">
+            <img id = "mashed" src="assets/images/mashed_potatoes.jpg" alt="Mashed Potatoes" width="80" height="80">    
+        </div>
+        <div class="col-sm-1">
+            <img id = "spirals" src="assets/images/potato_spirals.jpg" alt="Potato Spirals" width="80" height="80">
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron">
+    <p id= "total-score">Your Total Score is: </p>
+</div>
+
+
+    <!-- //First Box
+    //Second Box
+    //Third Box
+        //2 columns
+            //column1 = random number (The random number shown at the start of the game should be between 19 - 120)
+            //column2 = win/loss counter
+    //Fourth Box
+        //4 columns
+            //column1 = crystal 1 (Each crystal should have a random hidden value between 1 - 12.)
+            //column2 = crystal 2 
+            //column3 = crystal 3 
+            //column4 = crystal 4 
+    //Fifth Box = "total score"
+    //Sixth Box = updates total count of crystal numbers
+
+    //var = userGuess (on click button needed to generate crystal number) -->
+
+</body>
+</html>
